@@ -6,6 +6,13 @@ function love.load()
         h = 60,
         speed = 200
     }
+
+    coin = {
+        x = 100,
+        y = 100,
+        w = 30,
+        h = 30,
+    }
 end
 
 function love.update(dt)
@@ -21,5 +28,9 @@ function love.update(dt)
 end
 
 function love.draw()
+    love.graphics.setColor(255/255,255/255,255/255)
     love.graphics.rectangle("fill", player.x, player.y, player.w, player.h)
+
+    love.graphics.setColor(255/255,255/255,0)
+    love.graphics.rectangle("fill", coin.x, coin.y, coin.w, coin.h)
 end
