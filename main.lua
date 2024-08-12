@@ -10,8 +10,8 @@ function love.load()
     coin = {
         x = 100,
         y = 100,
-        w = 30,
-        h = 30,
+        w = 35,
+        h = 35,
     }
 end
 
